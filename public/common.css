@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Reset Pack*/
+/*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+*{ box-sizing:border-box;}
+body,div,td,th,p,textarea{margin:0; padding:0; font-family:"Nanum Gothic","AppleGothicNeoSD","Malgun Gothic","arial","sans-serif","Helvetica"; color:#101010; }
+img { border:0; }
+a{ text-decoration:none; color:#444}
+a:focus,
+label:focus{/* outline:dashed #06F 1px;*/}
+input,select {vertical-align:middle; font-size:12px; font-family:Arial,Dotum; margin:0; padding:0; outline:none; }
+ul, ol, li ,dl , dt , dd {}
+ul, ol{ padding-left:20px;}
+h1, h2, h3, h4, h5, h6, h7 ,form { margin:0px; color:#444;}
+textarea{ overflow:auto; line-height:17px; outline:none; resize:none;}
+fieldset{margin:0; padding:0; border:none;}
+legend{ position:absolute; left:-9999%;}
+select { border: 1px solid #CCCCCC; padding:1px 1px 1px 1px; margin:1px 0; color:#666}
+input{border:1px solid #ccc; padding:5px 4px 4px; margin:1px 0;color:#666; }
+textarea{border:1px solid #ccc; padding:5px 4px 4px; margin:1px 0; color:#666; resize:none; vertical-align:middle;}
+label{ margin:0 0 0 0; padding:0px 0 0 0;}
+em{ font-style:normal;}
+caption{ font-size:0px; background:#090; height:0px; overflow:hidden; line-height:0px;}
+
+.body{ margin:10px;}
+.header{padding:13px; position: relative; background:#333333; color:#CCC;}
+.header .logo{  font-weight:bold;  margin:0px 0 0 0;}
+.header .logo a{ background:url(/img/logo.png) no-repeat; background-size:100%; width:92px; text-indent:-9999px; overflow:hidden; display:block;}
+.header .description{ margin-top:5px; position: absolute; right: 10px; top: 10px; color:#aaa; font-size:12px;}
+.contain{ margin:10px 0; overflow:hidden; position:relative;}
+.contain .container{ position:relative;}
+.contents{ border:#ccc solid 1px; padding:10px; margin:0px 0; min-height:400px; margin-right:150px; position:relative;}
+.contents img{max-width:100%;}
+.aside{border:#ccc solid 1px; padding:10px; width:140px; position:absolute; right:0px; top:0px; font-size:14px; }
+.footer{border:#ccc solid 1px; padding: 10px; text-align:center; font-size:12px;}
+
+
+
+.gnb{ overflow:hidden; list-style:none; margin:0; padding:0; margin-top:10px;}
+.gnb>li{ float:left; list-style:none; margin:0; padding:0; margin-right:5px;}
+.gnb>li a{ display:block; border:#000 solid 1px; padding:3px 10px; background:#555; color:#fff;}
+.gnb>li.active a{background:#222; border-color:#000; color:#fff;}
+
+.contents h4{ margin: 0px 0px 5px 0px}
+.contents.bbs ul.link{ list-style:none; margin:0; padding:0; margin-bottom:5px; overflow:hidden;}
+.contents.bbs ul.link>li{ list-style:none; margin:0; padding:0; float: left; margin-right:5px;}
+.contents.bbs ul.link>li.active img{ border-color:#f00; vertical-align:middle;}
+.contents.bbs ul.link>li img{ border:#ccc solid 2px; width: 40px; height:40px;}
+
+
+
+@media screen and (max-width:360px) {
+.contents{ margin-right:0px;}
+.aside{ position:static; right:auto; top:auto; width:auto; margin-top:10px;}
+}
+
+

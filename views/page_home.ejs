@@ -1,0 +1,26 @@
+
+
+<main class="contents">
+    <h4>홈 본문입니다.</h4>
+    <h1 class="package-name">
+        <a href="http://npmjs.com/package/ejs" target="_blank">ejs</a>
+        <i class="icon-public"></i>
+    </h1>
+    <ul>
+        <li>nodejs.org/ko/</li>
+        <li>npmjs.com/package/ejs</li>
+        <li>supervisor  app.js</li>
+        <li>forever start app.js</li>
+        <li>npm install express -save</li>
+    </ul>
+	<xmp>
+var express = require('express');
+var app = express();
+app.locals.pretty = true;
+app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
+app.set('views', './views');
+app.use(express.static('public'));
+	</xmp>
+
+</main>

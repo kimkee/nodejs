@@ -1,0 +1,15 @@
+
+<ul class="gnb">
+	<li class="intro"><a href="/intro">Intro</a></li>
+	<li class="bbs"><a href="/bbs">BBS</a></li>
+	<li class="contact"><a href="/contact">Contact</a></li>
+</ul>
+<script>
+	//var gact =  ;
+	//console.log("<%= gact%>");
+	if("<%= gact%>"){
+		$(".gnb>li.<%= gact%>").addClass("active");
+	}else{
+		$(".gnb>li").removeClass("active");
+	}
+</script>

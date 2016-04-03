@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-kimkee",
+  "version": "1.0.0",
+  "description": "nodejs tranning",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kimkee",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimkee/nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimkee/nodejs/issues"
+  },
+  "homepage": "https://github.com/kimkee/nodejs#readme",
+  "keywords": [
+    "kimkee"
+  ]
+}

@@ -1,0 +1,16 @@
+
+
+<main class="contents bbs">
+    <ul class="link">
+        <% for(var i=0; i<3; i++) {
+            var n = i+1;
+            photo == n ? p = 'active' : p = '';        
+        %>
+        <li class="m<%= n%> <%= p%>"><a href="/bbs/?photo=<%= n%>"><img src="/img/photo<%= n%>.jpg"></a></li>
+        <% } %>
+    </ul>
+
+    <p>
+        <img src="/img/photo<%= photo%>.jpg">
+    </p>
+</main>

@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var favicon = require('serve-favicon');
+var gulps = require('gulp-css-url-adjuster');
+var gulp = gulps();
 app.locals.pretty = true;
 //app.set('view engine', 'jade');
 app.set('view engine', 'ejs');
@@ -11,13 +13,22 @@ app.use(favicon(__dirname + '/public/img/favicon.ico'));
 //app.get('/template', function(req,res){
 //	res.render('temp', {time:Date(), title:'Jade'});
 //});
+
+gulp.src('common.css').
+  pipe(urlAdjuster({
+    prepend: '/image_directory/',
+    append: '?version=1',
+  }))
+  .pipe(gulp.dest('common.min.css'));
+
+
 app.get(['/','/:id'], function(req,res){
 	var opt = {
 		time:Date(),
 		title:'Node.js',
 		contents:'page_home',
 		photo:'1',
-		active:'1', 
+		active:'1',
 		gact:''
 	};
 	var id = req.params.id;

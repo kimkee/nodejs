@@ -17,7 +17,7 @@ app.get(['/','/:id'], function(req,res){
 		title:'Node.js',
 		contents:'page_home',
 		photo:'1',
-		active:'1',
+		active:'1', 
 		gact:''
 	};
 	var id = req.params.id;

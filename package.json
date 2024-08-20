@@ -4,7 +4,7 @@
   "description": "nodejs tranning",
   "main": "app.js",
   "dependencies": {
-    "ejs": "^2.4.1",
+    "ejs": "^3.1.10",
     "express": "^4.13.4",
     "gulp-css-url-adjuster": "^0.2.3",
     "jade": "^1.11.0",
